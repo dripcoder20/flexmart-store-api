@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1595080390">
+  <project timestamp="1595080390">
+    <package name="App\Console">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Console/Kernel.php">
+        <class name="App\Console\Kernel" namespace="App\Console">
+          <metrics complexity="2" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="44" ncloc="21" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Exceptions">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Exceptions/Handler.php">
+        <class name="App\Exceptions\Handler" namespace="App\Exceptions">
+          <metrics complexity="2" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="58" ncloc="26" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Controllers">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Controllers/Controller.php">
+        <class name="App\Http\Controllers\Controller" namespace="App\Http\Controllers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="13" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Kernel.php">
+        <class name="App\Http\Kernel" namespace="App\Http">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="67" ncloc="44" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Middleware">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/Authenticate.php">
+        <class name="App\Http\Middleware\Authenticate" namespace="App\Http\Middleware">
+          <metrics complexity="2" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="24" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/CheckForMaintenanceMode.php">
+        <class name="App\Http\Middleware\CheckForMaintenanceMode" namespace="App\Http\Middleware">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/EncryptCookies.php">
+        <class name="App\Http\Middleware\EncryptCookies" namespace="App\Http\Middleware">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/RedirectIfAuthenticated.php">
+        <class name="App\Http\Middleware\RedirectIfAuthenticated" namespace="App\Http\Middleware">
+          <metrics complexity="2" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="30" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/TrimStrings.php">
+        <class name="App\Http\Middleware\TrimStrings" namespace="App\Http\Middleware">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="18" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/TrustHosts.php">
+        <class name="App\Http\Middleware\TrustHosts" namespace="App\Http\Middleware">
+          <metrics complexity="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="23" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/TrustProxies.php">
+        <class name="App\Http\Middleware\TrustProxies" namespace="App\Http\Middleware">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="23" ncloc="13" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Http/Middleware/VerifyCsrfToken.php">
+        <class name="App\Http\Middleware\VerifyCsrfToken" namespace="App\Http\Middleware">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="17" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Models">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Models/Cart.php">
+        <class name="App\Models\Cart" namespace="App\Models">
+          <metrics complexity="10" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="28" coveredelements="28"/>
+        </class>
+        <line num="11" type="method" name="add" visibility="public" complexity="4" crap="4" count="6"/>
+        <line num="14" type="stmt" count="6"/>
+        <line num="18" type="stmt" count="6"/>
+        <line num="19" type="stmt" count="6"/>
+        <line num="20" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="6"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="6"/>
+        <line num="29" type="stmt" count="6"/>
+        <line num="30" type="stmt" count="6"/>
+        <line num="33" type="stmt" count="6"/>
+        <line num="34" type="stmt" count="6"/>
+        <line num="37" type="method" name="updateCartItem" visibility="public" complexity="3" crap="3" count="3"/>
+        <line num="39" type="stmt" count="3"/>
+        <line num="40" type="stmt" count="3"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="2"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="51" type="method" name="removeCartItem" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="53" type="stmt" count="2"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="60" type="method" name="scopeExist" visibility="public" complexity="1" crap="1" count="7"/>
+        <line num="62" type="stmt" count="7"/>
+        <metrics loc="64" ncloc="58" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="24" coveredstatements="24" elements="28" coveredelements="28"/>
+      </file>
+    </package>
+    <package name="App\Providers">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Providers/AppServiceProvider.php">
+        <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+        </class>
+        <line num="14" type="method" name="register" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="17" type="stmt" count="9"/>
+        <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="27" type="stmt" count="9"/>
+        <metrics loc="28" ncloc="14" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Providers/AuthServiceProvider.php">
+        <class name="App\Providers\AuthServiceProvider" namespace="App\Providers">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="23" type="method" name="boot" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="25" type="stmt" count="9"/>
+        <line num="28" type="stmt" count="9"/>
+        <metrics loc="29" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Providers/BroadcastServiceProvider.php">
+        <class name="App\Providers\BroadcastServiceProvider" namespace="App\Providers">
+          <metrics complexity="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="24" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Providers/EventServiceProvider.php">
+        <class name="App\Providers\EventServiceProvider" namespace="App\Providers">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        </class>
+        <line num="28" type="method" name="boot" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="30" type="stmt" count="9"/>
+        <line num="33" type="stmt" count="9"/>
+        <metrics loc="34" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </file>
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/Providers/RouteServiceProvider.php">
+        <class name="App\Providers\RouteServiceProvider" namespace="App\Providers">
+          <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
+        </class>
+        <line num="31" type="method" name="boot" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="35" type="stmt" count="9"/>
+        <line num="36" type="stmt" count="9"/>
+        <line num="43" type="method" name="map" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="45" type="stmt" count="9"/>
+        <line num="47" type="stmt" count="9"/>
+        <line num="50" type="stmt" count="9"/>
+        <line num="59" type="method" name="mapWebRoutes" visibility="protected" complexity="1" crap="1" count="9"/>
+        <line num="61" type="stmt" count="9"/>
+        <line num="62" type="stmt" count="9"/>
+        <line num="63" type="stmt" count="9"/>
+        <line num="64" type="stmt" count="9"/>
+        <line num="73" type="method" name="mapApiRoutes" visibility="protected" complexity="1" crap="1" count="9"/>
+        <line num="75" type="stmt" count="9"/>
+        <line num="76" type="stmt" count="9"/>
+        <line num="77" type="stmt" count="9"/>
+        <line num="78" type="stmt" count="9"/>
+        <line num="79" type="stmt" count="9"/>
+        <metrics loc="80" ncloc="40" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
+      </file>
+    </package>
+    <package name="App">
+      <file name="/home/kristher/Code/Flexmart/flexmart-store-api/app/User.php">
+        <class name="App\User" namespace="App">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="38" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="19" loc="648" ncloc="397" classes="5" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="56" coveredelements="56"/>
+  </project>
+</coverage>

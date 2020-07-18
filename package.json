@@ -16,6 +16,13 @@
         "lodash": "^4.17.13",
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.15.2",
-        "sass-loader": "^8.0.0"
+        "sass-loader": "^8.0.0",
+        "husky": "^4.2.5"
+    },
+    "dependencies": {},
+    "husky": {
+        "hooks": {
+            "pre-commit": "php-cs-fixer fix . && git add ."
+        }
     }
 }
