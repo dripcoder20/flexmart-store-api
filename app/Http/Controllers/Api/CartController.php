@@ -10,12 +10,16 @@ use Illuminate\Http\Response;
 
 class CartController extends Controller
 {
-    //
-    public function store(Request $request)
+    public function index($userId)
     {
-        $userId = 1; // Todo Change in the future
+        $cartCollection = Cart::collection($userId);
+        return CartResource::collection($cartCollection);
+    }
+    //
+    public function store($userId, Request $request)
+    {
         Cart::addItem(
-            1,
+            $userId,
             $request->only(
                 ['product_id', 'name', 'sku', 'unit_price', 'discount', 'metadata']
             )

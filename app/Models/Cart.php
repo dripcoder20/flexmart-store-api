@@ -81,4 +81,9 @@ class Cart extends Model
         $discount = $this->unit_price * $this->discount;
         return $this->quantity * ($this->unit_price - $discount);
     }
+
+    public static function collection($userId)
+    {
+        return self::where('user_id', $userId)->get();
+    }
 }
