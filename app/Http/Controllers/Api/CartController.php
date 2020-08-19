@@ -36,7 +36,7 @@ class CartController extends Controller
 
     public function destroy($userId, Request $request)
     {
-        $productIds = is_array($request->product_id) ? $request->product_id : [$request->product_id];
+        $productIds = is_array($request->product_id) ? $request->product_id : explode(',', $request->product_id);
         Cart::removeItem($userId, $productIds);
 
         return (CartResource::collection(Cart::items($userId)->get()))->response()->setStatusCode(Response::HTTP_ACCEPTED);
