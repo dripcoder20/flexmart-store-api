@@ -22,3 +22,6 @@ Route::post('cart/{userId}', "Api\CartController@store");
 Route::get('cart/{userId}', "Api\CartController@index");
 Route::put('cart/{userId}', "Api\CartController@update");
 Route::delete('cart/{userId}', "Api\CartController@destroy");
+Route::get('{userId}/transactions/', "Api\TransactionController@index");
+Route::get('{userId}/transactions/{trackingNumber}', "Api\TransactionController@show");
+Route::delete('{userId}/transactions/{trackingNumber}', "Api\TransactionController@destroy");
