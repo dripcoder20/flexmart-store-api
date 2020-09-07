@@ -18,10 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('cart/{userId}', "Api\CartController@store");
-Route::get('cart/{userId}', "Api\CartController@index");
-Route::put('cart/{userId}', "Api\CartController@update");
-Route::delete('cart/{userId}', "Api\CartController@destroy");
+Route::post('{userId}/cart', "Api\CartController@store");
+Route::get('{userId}/cart', "Api\CartController@index");
+Route::put('{userId}/cart', "Api\CartController@update");
+Route::delete('{userId}/cart', "Api\CartController@destroy");
 Route::get('{userId}/transactions/', "Api\TransactionController@index");
 Route::get('{userId}/transactions/{trackingNumber}', "Api\TransactionController@show");
 Route::delete('{userId}/transactions/{trackingNumber}', "Api\TransactionController@destroy");
