@@ -1,0 +1,10 @@
+coverage:
+  status:
+    patch: off
+    project:
+      default:
+        target: 95%
+        threshold: 0%
+        base: auto
+        only_pulls: true
+        if_ci_failed: error

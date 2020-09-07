@@ -10,22 +10,27 @@ use Illuminate\Http\Response;
 
 class TransactionController extends Controller
 {
-    public function index($userId) {
-        $transactions = Transaction::collection($userId,
+    public function index($userId)
+    {
+        $transactions = Transaction::collection(
+            $userId,
             request('offset', 0),
-            request('limit', 10));
+            request('limit', 10)
+        );
         return TransactionResource::collection($transactions);
     }
 
-    public function show($userId, $trackingNumber) {
+    public function show($userId, $trackingNumber)
+    {
         $transaction = Transaction::find($userId, $trackingNumber);
         return new TransactionResource($transaction);
     }
 
-    public function destroy($userId, $trackingNumber) {
-
+    public function destroy($userId, $trackingNumber)
+    {
         $transaction = new TransactionResource(
-            Transaction::cancel($userId, $trackingNumber));
+            Transaction::cancel($userId, $trackingNumber)
+        );
 
         return response()->json([
             'message' => 'Transaction was cancelled',

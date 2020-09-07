@@ -22,11 +22,11 @@ class Transaction extends Model
     const TO_SHIP = 6;
     const TO_RECEIVE = 7;
 
-    public static function boot() {
+    public static function boot()
+    {
         parent::boot();
 
-        self::creating(function($transaction)
-        {
+        self::creating(function ($transaction) {
             // TODO: Create a tracking number generator
             $transaction->tracking_number = Str::uuid();
         });
@@ -40,14 +40,15 @@ class Transaction extends Model
             ->get();
     }
 
-    public static function find($userId, $trackingNumber) {
+    public static function find($userId, $trackingNumber)
+    {
         return self::where('user_id', $userId)
             ->where('tracking_number', $trackingNumber)
             ->first();
     }
 
-    public static function cancel($userId, $trackingNumber) {
-
+    public static function cancel($userId, $trackingNumber)
+    {
         $transaction = self::find($userId, $trackingNumber);
         $transaction->update(['status' => self::FAILED]);
 

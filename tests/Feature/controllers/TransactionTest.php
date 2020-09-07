@@ -5,7 +5,6 @@ namespace Tests\Feature;
 use App\Models\Transaction;
 use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class TransactionTest extends TestCase
@@ -15,7 +14,8 @@ class TransactionTest extends TestCase
     /**
      * @test
      */
-    public function should_list_user_transactions() {
+    public function should_list_user_transactions()
+    {
         $this->withoutExceptionHandling();
 
         $user = $this->createUser();
@@ -31,7 +31,8 @@ class TransactionTest extends TestCase
     /**
      * @test
      */
-    public function should_list_user_transactions_to_spicified_limit() {
+    public function should_list_user_transactions_to_spicified_limit()
+    {
         $this->withoutExceptionHandling();
 
         $user = $this->createUser();
@@ -47,7 +48,8 @@ class TransactionTest extends TestCase
     /**
      * @test
      */
-    public function should_get_specific_user_transactions() {
+    public function should_get_specific_user_transactions()
+    {
         $this->withoutExceptionHandling();
 
         $user = $this->createUser();
@@ -70,7 +72,8 @@ class TransactionTest extends TestCase
     /**
      * @test
      */
-    public function should_cancel_specific_user_transactions() {
+    public function should_cancel_specific_user_transactions()
+    {
         $this->withoutExceptionHandling();
 
         $user = $this->createUser();
@@ -91,7 +94,8 @@ class TransactionTest extends TestCase
     }
 
 
-    private function createUser() {
+    private function createUser()
+    {
         return factory(User::class)->create();
     }
 }
