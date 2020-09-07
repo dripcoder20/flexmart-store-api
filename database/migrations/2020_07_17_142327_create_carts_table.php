@@ -19,9 +19,10 @@ class CreateCartsTable extends Migration
             $table->string('sku');
             $table->string('product_id');
             $table->string('name');
+            $table->string('thumbnail')->nullable();
             $table->json('metadata')->nullable();
             $table->unsignedFloat('unit_price');
-            $table->unsignedFloat('discount');
+            $table->unsignedFloat('discount')->default(0);
             $table->unsignedInteger('quantity')->default(1);
             $table->timestamps();
         });
