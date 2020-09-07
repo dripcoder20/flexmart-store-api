@@ -21,7 +21,7 @@ class CartController extends Controller
         Cart::addItem(
             $userId,
             $request->only(
-                ['product_id', 'name', 'sku', 'unit_price', 'discount', 'metadata']
+                ['product_id', 'name', 'sku', 'unit_price', 'discount', 'metadata', 'thumbnail']
             )
         );
         return (CartResource::collection(Cart::items($userId)->get()))->response()->setStatusCode(Response::HTTP_ACCEPTED);
