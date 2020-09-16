@@ -84,6 +84,6 @@ class Cart extends Model
 
     public static function collection($userId)
     {
-        return self::where('user_id', $userId)->get();
+        return self::where('user_id', $userId)->orderBy("id")->get();
     }
 }
