@@ -7,7 +7,7 @@ use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class TransactionTest extends TestCase
+class TransactionControllerTest extends TestCase
 {
     use RefreshDatabase;
 
