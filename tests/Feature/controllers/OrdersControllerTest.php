@@ -6,6 +6,7 @@ use App\Enums\OrderStatus;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use App\Models\Order;
+use App\Models\Cart;
 use Illuminate\Http\Response;
 
 class OrdersControllerTest extends TestCase
@@ -59,9 +60,10 @@ class OrdersControllerTest extends TestCase
     {
         $this->withoutExceptionHandling();
         $data = factory(Order::class)->make();
-
+        $this->assertCount(1, Cart::collection($data->user_id));
         $this->post('/api/orders/', $data->toArray())->assertCreated();
         $this->assertDatabaseHas('orders', ['user_id'=> $data->user_id, 'amount'=>$data->amount]);
         $this->assertCount(1, Order::orderBy('id', 'desc')->first()->statuses);
+        $this->assertCount(0, Cart::collection($data->user_id));
     }
 }

@@ -81,4 +81,16 @@ class CartControllerTest extends TestCase
         $this->delete('/api/1/cart', ['product_id' => [1, 2, 3]])->assertStatus(Response::HTTP_ACCEPTED);
         $this->assertDatabaseCount('carts', 0);
     }
+
+    /** @test */
+    public function it_should_remove_multiple_items_from_cart_comma_delimiter()
+    {
+        $this->withoutExceptionHandling();
+        $this->post('/api/1/cart', $this->product + ['quantity' => 1])->assertStatus(Response::HTTP_ACCEPTED);
+        $this->product['product_id'] = 2;
+        $this->post('/api/1/cart', $this->product + ['quantity' => 1])->assertStatus(Response::HTTP_ACCEPTED);
+        $this->product['product_id'] = 3;
+        $this->delete('/api/1/cart', ['product_id' => "1,2"])->assertStatus(Response::HTTP_ACCEPTED);
+        $this->assertDatabaseCount('carts', 0);
+    }
 }

@@ -8,11 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $guarded = [];
+    protected $with = ['statuses'];
     //
     protected $casts =[
         'user'=>'array',
         'shipping_information'=> 'array',
-        'cart'=> 'array'
+        'cart'=> 'array',
+        'created_at'=>'datetime:Y-m-d H:i:s',
+        'updated_at'=>'datetime:Y-m-d H:i:s'
     ];
 
     protected static function boot()

@@ -19,7 +19,6 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('tracking_number')->default(0);
-            $table->unsignedDouble('amount');
             $table->string('user_id');
             $table->json('user')->nullable();
             $table->enum('payment_type', [
@@ -27,12 +26,15 @@ class CreateOrdersTable extends Migration
                 PaymentType::PAYMENT_GATEWAY,
                 PaymentType::CREDIT_CARD
               ])->default(PaymentType::CASH_ON_DELIVERY);
+
             $table->enum('shipping_type', [
+                ShippingType::FREE,
                 ShippingType::STANDARD,
                 ShippingType::EXPRESS,
                 ShippingType::PICKUP,
                 ShippingType::ONLINE,
             ])->default(ShippingType::STANDARD);
+            $table->unsignedDouble('amount');
             $table->unsignedDouble('shipping_charge')->default(0);
             $table->json('shipping_information');
             $table->unsignedDouble('discount')->default(0);
