@@ -10,7 +10,7 @@ $factory->define(Order::class, function (Faker $faker) {
         //
         'tracking_number' =>$faker->lexify("????-????"),
         'amount'=>$faker->randomFloat(2, 100, 1200),
-        'user_id'=> $faker->uuid,
+        'user_id'=> $userId = $faker->uuid,
         'user'=> [
             'user_id'=> $faker->uuid,
             'name'=> $faker->name
@@ -21,7 +21,7 @@ $factory->define(Order::class, function (Faker $faker) {
             'city'=>$faker->city,
             'province'=>$faker->state
         ],
-        'cart'=> factory(Cart::class)->create(),
+        'cart'=> factory(Cart::class, 1)->create(['user_id'=>$userId])->toArray(),
         'status'=> OrderStatus::PENDING
     ];
 });
